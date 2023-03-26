@@ -50,6 +50,7 @@ public class Main {
                     case 5:
                         System.out.println("Deseja finalizar o programa?");
                         s = scan.next();
+                        break;
                     default:
                         System.out.println("Opção selecionada invalida.");
                         break;
@@ -57,7 +58,8 @@ public class Main {
 
             } else {
                 System.out.println("A lista está vazia, adicione um novo elemento.");
-                doublyLinkedList.add("Primeiro elemento");
+                e=scan.next();
+                doublyLinkedList.add(e);
                 System.out.println("Novo elemento adicionado!");
             }
         } while(s.equalsIgnoreCase("nao"));
